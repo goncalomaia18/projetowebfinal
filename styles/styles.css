@@ -59,6 +59,8 @@ body {
 .button1 {
     background-color: rgb(43, 124, 46);
     transition-duration: 0.5s;
+    position: relative;
+    left: 290px;
 }
 
 .button1:hover {
@@ -70,9 +72,37 @@ body {
 .button2 {
     background-color: #b02911;
     transition-duration: 0.5s;
+    position: relative;
+    left: 300px;
 }
 
 .button2:hover {
+    background-color: white;
+    color: #b02911;
+    border: 1px solid #b02911;
+}
+
+.button3 {
+    background-color: rgb(43, 124, 46);
+    transition-duration: 0.5s;
+    position: relative;
+    left: 290px;
+}
+
+.button3:hover {
+    background-color: white;
+    color:#2b7c2e;
+    border: 1px solid #2b7c2e;
+}
+
+.button4 {
+    background-color: #b02911;
+    transition-duration: 0.5s;
+    position: relative;
+    left: 300px;
+}
+
+.button4:hover {
     background-color: white;
     color: #b02911;
     border: 1px solid #b02911;
