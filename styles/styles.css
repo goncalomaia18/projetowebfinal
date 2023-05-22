@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#menu-h{
+    background-color: rgb(10, 131, 30);
+}
+
+#menu-h ul {
+    max-width: 800px;
+    list-style: none;
+    padding: 0;
+}
+
+#menu-h ul li {
+    display: inline;
+}
+
+#menu-h ul li a {
+    color: #FFF;
+    padding: 20px;
+    display: inline-block;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+
+#menu-h ul li a:hover {
+    background-color: rgb(255, 255, 255);
+    color: #2b7c2e;
+}
+
+#menu-h ul li:last-child a {
+    float: right;
+    
+}
+
+body {
+    background-color: white;
+}
+
+.button {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+  }
+  
+.button1 {
+    background-color: #2b7c2e;
+    transition-duration: 0.5s;
+}
+
+.button1:hover {
+    background-color: white;
+    color:#2b7c2e;
+    border: 1px solid #2b7c2e;
+}
+
+.button2 {
+    background-color: #b02911;
+    transition-duration: 0.5s;
+}
+
+.button2:hover {
+    background-color: white;
+    color: #b02911;
+    border: 1px solid #b02911;
+}
+
+  td {
+    background-color: #04AA6D;
+    color: white;
+    text-align: center;
+  }
