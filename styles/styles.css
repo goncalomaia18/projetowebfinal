@@ -109,13 +109,13 @@ body {
     border: 1px solid #b02911;
 }
 
-  td {
+td {
     background-color: rgb(10, 131, 30);
     color: white;
     text-align: center;
-  }
+}
 
-  footer {
+footer {
     position: absolute;
     bottom: 0;
     background-color: rgb(43, 124, 46);
