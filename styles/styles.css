@@ -13,16 +13,19 @@ ul {
   padding: 0;
   overflow: hidden;
   background-color: rgb(43, 124, 46);
-  position: sticky;
 }
 
 li {
     float: left;
 }
 
+li:last-child {
+    float: right;   
+}
+
 li a {
     background-color: rgb(43, 124, 46);
-    color: #FFF;
+    color: rgb(255, 255, 255);
     padding: 15px 20px;
     display: block;
     text-align: center;
@@ -30,7 +33,7 @@ li a {
     transition-duration: 0.5s;
 }
 
-li a:hover {
+li a:hover:not(.active) {
     background-color: rgb(255, 255, 255);
     color: rgb(43, 124, 46);
 }
@@ -137,19 +140,20 @@ div.z1 {
   
 div.z2 {
    background-color: rgb(255, 255, 255);
+   text-align: center;
 }
   
-  div.z3{
+div.z3 {
    background-color: rgb(255, 255, 255);
-  }
+   text-align: center;
+}
 
 
 
-@media screen and (max-width:568px){
-    div.z1 {text-align: center; display: block; justify-content: left; align-items: center;}
-    div.z2 {margin-right:1vw; list-style-type:square; text-align:right; width:98vw; height:23.8vh}
-    div.z2 h1 {font-size: 110%;}
-    div.z3 {width:98vw;height:23.8vh}
-    /*Botão não funciona*/
-    div.z4 {list-style-type:square; text-align:left; width:98vw; height:23.8vh}
+@media screen and (max-width: 568px) {
+    div.z1 li {text-align: center;}
+    div.z1:last-child {float: center;}
+    div.z2 {margin-right: 1vw; list-style-type: square; text-align: center; width: 98vw; height: 23.8vh;}
+    div.z2 h1 {font-size: 100%;}
+    div.z3 img {width: 35vw; height: 20vh;}
 }
