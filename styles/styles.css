@@ -150,4 +150,6 @@ div.z2 {
     div.z2 {margin-right:1vw; list-style-type:square; text-align:right; width:98vw; height:23.8vh}
     div.z2 h1 {font-size: 110%;}
     div.z3 {width:98vw;height:23.8vh}
+    /*Botão não funciona*/
+    div.z4 {list-style-type:square; text-align:left; width:98vw; height:23.8vh}
 }
