@@ -2,7 +2,7 @@
 
 function valida()//Função de validação do formulário
 {
-    document.getElementById("place").innerHTML="<b>Chamada à função de validação! ;)<b>";
+    document.getElementById("place").innerHTML="";
     //var nome = document.getElementById("nome").value;
     //var idade = document.getElementById("idade").value;
     //var nome = document.getElementsByName("nome")[0].value;
@@ -23,47 +23,37 @@ function valida()//Função de validação do formulário
     c1 = document.getElementById("util");
     if(util.length==0)
     {
-      window.alert("o campo nome está vazio!");
-      c1.value = "Campo vazio";
-      c1.style.border="2px dashed black";
+      window.alert("O campo utilizador está vazio!");
       c1.style.background="red";
       return false;
     }
     else if(isNaN(util) && !flag1)
           {
-            c1.value = "Campo OK!";
             c1.style.background="green"; 
           }
           else
           {
             window.alert("Campo Inválido!");
-            c1.value = "Campo Inválido!";
-            c1.style.border="2px dashed brown";
-            c1.style.background="magenta"; 
+            c1.style.background="red"; 
             return false;     
           }
 
-  //idade:
+  //pass:
   c2 = document.getElementById("pass");
   if(pass.length==0)
     {
-      window.alert("o campo idade está vazio!");
-      c2.value = "Campo vazio";
-      c2.style.border="2px dashed black";
+      window.alert("O campo password está vazio!");
       c2.style.background="red";
       return false;
     }
-    else if(!isNaN(util))
+    else if(!isNaN(pass))
           {
-            c2.value = "Campo OK!";
             c2.style.background="green"; 
           }
           else
           {
             window.alert("Campo Inválido!");
-            c2.value = "Campo Inválido!";
-            c2.style.border="2px dashed brown";
-            c2.style.background="magenta"; 
+            c2.style.background="red"; 
             return false;     
           }
 
