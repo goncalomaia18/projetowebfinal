@@ -1,4 +1,4 @@
-function valida()//Função de validação do formulário
+/*function valida()//Função de validação do formulário
 {
     document.getElementById("place").innerHTML="";
     
@@ -48,4 +48,24 @@ function valida()//Função de validação do formulário
           }
 
    return true;//não é necessário porque dá true por default
+  } */
+
+  function validarFormulario() {
+    // Obtém os valores dos campos de entrada
+    var usuario = document.forms["form"]["util"].value;
+    var senha = document.forms["form"]["pass"].value;
+
+    // Realiza a validação
+    if (usuario == "") {
+      alert("Por favor, preencha o campo Usuário.");
+      return false;
+    }
+    
+    if (senha == "") {
+      alert("Por favor, preencha o campo Senha.");
+      return false;
+    }
+
+    // Se a validação passar, o formulário pode ser enviado
+    return true;
   }
