@@ -1,17 +1,7 @@
-
-
 function valida()//Função de validação do formulário
 {
     document.getElementById("place").innerHTML="";
-    //var nome = document.getElementById("nome").value;
-    //var idade = document.getElementById("idade").value;
-    //var nome = document.getElementsByName("nome")[0].value;
-    //var idade= document.getElementsByName("idade")[0].value;
-    //se name="ambos" em ambos os inputs, então, seria:
-    //var nome = document.getElementsByName("ambos")[0].value;
-    //var idade = document.getElementsByName("ambos")[1].value;
-    //var nome = document.forms["myform"]["nome"].value;
-    //var idade = document.forms["myform"]["idade"].value;
+    
     var util = form.util.value;
     var pass = form.pass.value;
     
