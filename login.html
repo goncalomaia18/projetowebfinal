@@ -21,12 +21,13 @@
         <div style="text-align:center"><h3>Login</h3></div>
         <br>
         <div style="text-align:center">
-        <form name="form" method="get" action="" >
+        <form class="sombra" name="form" method="get" action="" >
             <p></p>
             <input type="text" name="util" id="util" placeholder="Utilizador"><p>
             <input type="password" name="pass" id="pass" placeholder="Palavra-Passe"><p>
-            <input type="submit" value="Entrar">
+            <input type="submit" value="Entrar" onclick="return valida()">
         </form>
+        <p id="place"></p>
         </div>
         <p></p>
         <footer>
