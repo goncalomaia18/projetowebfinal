@@ -36,7 +36,7 @@ function valida()//Função de validação do formulário
       c2.style.background="red";
       return false;
     }
-    else if(!isNaN(pass))
+    else if(isNaN(pass))
           {
             c2.style.background="green"; 
           }
