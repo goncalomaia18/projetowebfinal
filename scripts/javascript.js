@@ -36,16 +36,16 @@ function valida()//Função de validação do formulário
       c2.style.background="red";
       return false;
     }
-    else if(isNaN(pass))
-          {
-            c2.style.background="green"; 
-          }
-          else
-          {
-            window.alert("Campo Inválido!");
-            c2.style.background="red"; 
-            return false;     
-          }
+  else if(!isNaN(pass))
+    {
+      c2.style.background="green"; 
+    }
+  else
+    {
+      window.alert("Campo Inválido!");
+      c2.style.background="red"; 
+      return false;     
+    }
 
    return true;//não é necessário porque dá true por default
   } 
