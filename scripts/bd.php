@@ -16,16 +16,16 @@
                   { echo "Unable to open database";}
               else{
               //Get values from WEBPAGE:
-              $util = $_REQUEST['util'];
-              $pass= $_REQUEST['pass'];
+              $util = $_POST['util'];
+              $pass= $_POST['pass'];
 
               if(isset($util) || isset($pass))
               {
               //Inserir valores na tabela previnentes da página WEB
-                $db->exec("CREATE TABLE IF NOT EXISTS x (id integer PRIMARY KEY,text,password)");
+                $db->exec("CREATE TABLE IF NOT EXISTS x (id integer PRIMARY KEY, util TEXT, pass TEXT)");
                 //O id é incrementado de forma automática com a opção NULL em VALUES
                 //$db->exec("INSERT INTO x (id,name,number) VALUES(NULL,'MARTIM2','14')");
-                $db->exec("INSERT INTO x (id,text,password) VALUES(NULL,'$util','$pass')");
+                $db->exec("INSERT INTO x (id, util, pass) VALUES(NULL,'$util','$pass')");
               }
               //Imprimir a tabela dos dados armazenados
                 echo "<p></p>";
